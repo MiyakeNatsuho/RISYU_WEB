@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "b3afd0746212992d63b12c2a94de590e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -285,16 +285,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.22",
+            "version": "2.1.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "68e418ec08fbfc6f58f6fd2eea70ca8efc8cc7d5"
+                "reference": "5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/68e418ec08fbfc6f58f6fd2eea70ca8efc8cc7d5",
-                "reference": "68e418ec08fbfc6f58f6fd2eea70ca8efc8cc7d5",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df",
+                "reference": "5fa792ad1853ae2bc60528dd3e5cbf4542d3c1df",
                 "shasum": ""
             },
             "require": {
@@ -341,9 +341,9 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.22"
+                "source": "https://github.com/egulias/EmailValidator/tree/2.1.23"
             },
-            "time": "2020-09-26T15:48:38+00:00"
+            "time": "2020-10-31T20:37:35+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -771,6 +771,57 @@
             "time": "2019-08-07T15:10:45+00:00"
         },
         {
+            "name": "leafo/scssphp",
+            "version": "v0.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "dfb793daf3ecdce82c40fb6e6c3a84b6ab230364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/dfb793daf3ecdce82c40fb6e6c3a84b6ab230364",
+                "reference": "dfb793daf3ecdce82c40fb6e6c3a84b6ab230364",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "php": ">=5.3.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "bin": [
+                "pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "scss.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.net/scssphp/",
+            "support": {
+                "issues": "https://github.com/leafo/scssphp/issues",
+                "source": "https://github.com/leafo/scssphp/tree/develop"
+            },
+            "abandoned": "scssphp/scssphp",
+            "time": "2014-08-05T05:45:15+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.1.3",
             "source": {
@@ -1162,16 +1213,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "c547f8262a5fa9ff507bd06cc394067b83a75085"
+                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/c547f8262a5fa9ff507bd06cc394067b83a75085",
-                "reference": "c547f8262a5fa9ff507bd06cc394067b83a75085",
+                "url": "https://api.github.com/repos/opis/closure/zipball/943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
+                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
                 "shasum": ""
             },
             "require": {
@@ -1221,9 +1272,58 @@
             ],
             "support": {
                 "issues": "https://github.com/opis/closure/issues",
-                "source": "https://github.com/opis/closure/tree/3.6.0"
+                "source": "https://github.com/opis/closure/tree/3.6.1"
             },
-            "time": "2020-10-11T21:42:15+00:00"
+            "time": "2020-11-07T02:01:34+00:00"
+        },
+        {
+            "name": "panique/laravel-sass",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/panique/laravel-sass.git",
+                "reference": "6145efcb99ff7ace4e9642c74cc89afc14ad6e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/panique/laravel-sass/zipball/6145efcb99ff7ace4e9642c74cc89afc14ad6e24",
+                "reference": "6145efcb99ff7ace4e9642c74cc89afc14ad6e24",
+                "shasum": ""
+            },
+            "require": {
+                "leafo/scssphp": "v0.0.14",
+                "php": ">=5.3.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "sass-compiler.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Panique",
+                    "homepage": "http://careers.stackoverflow.com/panique",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Compiles your Sass .scss files to .css every time you run your app (in development)",
+            "homepage": "https://github.com/panique/laravel-sass",
+            "keywords": [
+                "css",
+                "sass",
+                "scss"
+            ],
+            "support": {
+                "issues": "https://github.com/panique/laravel-sass/issues",
+                "source": "https://github.com/panique/laravel-sass"
+            },
+            "time": "2017-03-07T18:55:48+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3979,16 +4079,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8"
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
-                "reference": "2ec31f3adc54c71a59c5e3c2143d7a0e2f8899f8",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/307fb34a5ab697461ec4c9db865b20ff2fd40771",
+                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771",
                 "shasum": ""
             },
             "require": {
@@ -4038,9 +4138,9 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.0"
+                "source": "https://github.com/filp/whoops/tree/2.9.1"
             },
-            "time": "2020-10-20T12:00:00+00:00"
+            "time": "2020-11-01T12:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -4094,6 +4194,7 @@
                 "issues": "https://github.com/fzaninotto/Faker/issues",
                 "source": "https://github.com/fzaninotto/Faker/tree/v1.9.1"
             },
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
@@ -4276,29 +4377,27 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68"
+                "reference": "88b58b5bd9bdcc54756480fb3ce87234696544ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
-                "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/88b58b5bd9bdcc54756480fb3ce87234696544ee",
+                "reference": "88b58b5bd9bdcc54756480fb3ce87234696544ee",
                 "shasum": ""
             },
             "require": {
                 "filp/whoops": "^2.1.4",
                 "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
-                "php": "^7.1",
+                "php": "^7.1 || ^8.0",
                 "symfony/console": "~2.8|~3.3|~4.0"
             },
             "require-dev": {
-                "laravel/framework": "5.8.*",
-                "nunomaduro/larastan": "^0.3.0",
-                "phpstan/phpstan": "^0.11",
-                "phpunit/phpunit": "~8.0"
+                "laravel/framework": "^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -4340,7 +4439,21 @@
                 "issues": "https://github.com/nunomaduro/collision/issues",
                 "source": "https://github.com/nunomaduro/collision"
             },
-            "time": "2019-03-07T21:35:13+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-10-29T16:05:21+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -5754,7 +5867,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "panique/laravel-sass": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

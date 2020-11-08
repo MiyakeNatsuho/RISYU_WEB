@@ -1,0 +1,295 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    /* プロジェクトによって変動 */
+    min-width: 1000px;
+    color: #000;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "YuGothic",
+        "游ゴシック", "メイリオ", Meiryo, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", Arial, sans-serif;
+
+    width: 100%;
+    font-variant-numeric: tabular-nums;
+    /* safari hover対策 */
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+button {
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+/* 共通CSS */
+$light_green: #c9eacd;
+$dark_green: #9cd4a3;
+
+.back-home-button {
+    border: 1px solid #000;
+    background-color: $light_green;
+    width: 20%;
+    height: 10%;
+    margin-bottom: 2%;
+}
+.back-home-button:hover {
+    background-color: $dark_green;
+    font-weight: bold;
+}
+.standard-button {
+    border: 1px solid #000;
+    background-color: $light_green;
+    width: 20%;
+}
+.box {
+    font-size: 1rem;
+    padding-top: 3%;
+    margin-top: 1%;
+    border: 1px solid #000;
+    width: 50%;
+}
+
+/* ホーム画面 */
+/* home.blade.php */
+.home-button {
+    border: 1px solid #000;
+    margin: 5rem 3rem;
+    padding: 1rem 0;
+    position: relative;
+    display: block;
+    background-color: $light_green;
+    font-size: 2rem;
+}
+.home-button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+/* div枠(home-button)全体にリンクをつける設定 */
+.home-button a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* 履修登録画面 */
+/* course_registration.blade.php */
+.registration,
+.confirm {
+    margin-top: 7%;
+}
+
+.registration-button:hover {
+    opacity: 0.6;
+}
+.category select,
+.credit select,
+.course-name input {
+    width: 30%;
+    height: 2rem;
+}
+/* 履修登録確認画面 */
+/* confirm.blade.php */
+.confirm {
+    margin-bottom: 5%;
+}
+.confirm p {
+    margin: 3% 10%;
+}
+
+/* 取得単位一覧 */
+/* get_credit.blade.php */
+.get-credit h1 {
+    margin: 3% 0;
+}
+.get-credit h4 {
+    background-color: $light_green;
+    margin: 2% 0;
+    padding: 1% 5%;
+}
+.get-credit p {
+    font-size: 25px;
+}

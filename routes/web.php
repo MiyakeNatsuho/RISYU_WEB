@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('/course/registration', 'RisyuController@create');
+Route::get('/course/registration/confirm', 'RisyuController@confirm');
+Route::get('/list', 'RisyuController@subjectIndex');
+Route::get('/get/credit', 'RisyuController@creditIndex');
+Route::get('/graduation/credit', 'RisyuController@graduationSetting');
+Route::get('/password', 'RisyuController@passwordEdit');
