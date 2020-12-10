@@ -18,38 +18,37 @@
         <div class="box mx-auto">
             <div class="container">
                 <div class="align-items-center text-center">
-                    <div class="my-4 course-name">
-                        <p>①科目名を入力してください</p>
-                        <input type="text" 　class="course-input">
-                    </div>
-                    <div class="my-4 category">
-                        <p>②分類を選択してください</p>
-                        <select name="subjest-category">
-                            <option value="first" selected></option>
-                            <option value="specialized">専門科目</option>
-                            <option value="base">専門基礎科目</option>
-                            <option value="liberal">教養科目</option>
-                            <option value="necessary">必須科目</option>
-                        </select>
-                    </div>
-                    <div class="my-3 credit">
-                        <p>③単位数を選択してください</p>
-                        <select name="sredit-number">
-                            <option value="0" selected></option>
-                            <option value="1">1単位</option>
-                            <option value="2">2単位</option>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <div class="mx-auto my-4 standard-button">
-                            <p class="col-5"></p>
-                            <a class="col-2" href="{{ url('/course/registration/confirm') }}">確認画面へ</a>
-                            <p class="col-5"></p>
+                    <form method="GET" action="{{ url('/course/registration/confirm') }}">
+                        @csrf
+                        <div class="my-4 course-name">
+                            <p>①科目名を入力してください</p>
+                            <input type="text" name='subject'　class="course-input" required>
                         </div>
-                    </div>
-                    {{-- <div class="back-home-button">
-                        <a href="{{ url('/') }}">Back Home</a>
-                    </div> --}}
+                        <div class="my-4 category">
+                            <p>②分類を選択してください</p>
+                            <select name="category" required>
+                                <option ></option>
+                                <option value="専門科目">専門科目</option>
+                                <option value="専門基礎科目">専門基礎科目</option>
+                                <option value="教養科目">教養科目</option>
+                                <option value="必須科目">必須科目</option>
+                            </select>
+                        </div>
+                        <div class="my-3 credit">
+                            <p>③単位数を選択してください</p>
+                            <select name="credit"required>
+                                <option></option>
+                                <option value="1">1単位</option>
+                                <option value="2">2単位</option>
+                            </select>
+                        </div>
+                        <div class="mx-auto my-4">
+                            <input class="regist-submit" type="submit" name="regist_confirm" value="確認画面へ">
+                        </div>
+                        {{-- <div class="back-home-button">
+                            <a href="{{ url('/') }}">Back Home</a>
+                        </div> --}}
+                    </form>
                 </div>
             </div>
         </div>

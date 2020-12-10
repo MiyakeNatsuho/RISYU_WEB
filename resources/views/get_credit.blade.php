@@ -18,9 +18,9 @@
                 <h4>専門科目</h4>
                 <div class="container">
                     <div class="row">
-                        <h5 class="col-2">あとxxx単位</h5>
+                        <h5 class="col-2">あと{{((int)$specialized->credit - (int)$senmon)}}単位</h5>
                         <p class="col-8"></p>
-                        <h5 class="col-2 font-weight-bold">1/10</h5>
+                    <h5 class="col-2 font-weight-bold">{{$senmon}}/{{$specialized->credit}}</h5>
                     </div>
                 </div>
             </div>
@@ -28,9 +28,9 @@
                 <h4>専門基礎科目</h4>
                 <div class="container">
                     <div class="row">
-                        <h5 class="col-2">あとxxx単位</h5>
+                        <h5 class="col-2">あと{{(int)$base->credit - (int)$senmonkiso}}単位</h5>
                         <p class="col-8"></p>
-                        <h5 class="col-2 font-weight-bold">1/10</h5>
+                        <h5 class="col-2 font-weight-bold">{{$senmonkiso}}/{{$base->credit}}</h5>
                     </div>
                 </div>
             </div>
@@ -38,9 +38,9 @@
                 <h4>教養科目</h4>
                 <div class="container">
                     <div class="row">
-                        <h5 class="col-2">あとxxx単位</h5>
+                    <h5 class="col-2">あと{{$libral->credit - $kyouyou}}単位</h5>
                         <p class="col-8"></p>
-                        <h5 class="col-2 font-weight-bold">1/10</h5>
+                        <h5 class="col-2 font-weight-bold">{{$kyouyou}}/{{$libral->credit}}</h5>
                     </div>
                 </div>
             </div>
@@ -48,9 +48,9 @@
                 <h4>必須科目</h4>
                 <div class="container">
                     <div class="row">
-                        <h5 class="col-2">あとxxx単位</h5>
+                        <h5 class="col-2">あと{{(int)$necessary->credit - (int)$hissu}}単位</h5>
                         <p class="col-8"></p>
-                        <h5 class="col-2 font-weight-bold">1/10</h5>
+                        <h5 class="col-2 font-weight-bold">{{$hissu}}/{{$necessary->credit}}</h5>
                     </div>
                 </div>
             </div>

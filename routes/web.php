@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/course/registration', 'RisyuController@create');
 Route::get('/course/registration/confirm', 'RisyuController@confirm');
 Route::get('/list', 'RisyuController@subjectIndex');
+Route::get('/list/store', 'RisyuController@subjectIndexStore')->name('list.store');
 Route::get('/get/credit', 'RisyuController@creditIndex');
 Route::get('/graduation/credit', 'RisyuController@graduationSetting');
 Route::get('/password', 'RisyuController@passwordEdit');
+Route::post('/course/registration/confirm', 'RisyuController@store');
+Route::post('/graduation/credit', 'RisyuController@postIndex');

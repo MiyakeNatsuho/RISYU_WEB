@@ -15,13 +15,18 @@
         <div class="container">
             <h1 class="text-center">確認画面</h1>
             <div class="box mx-auto">
-                <p>①科目名：</p>
-                <p>②分類　：</p>
-                <p>③単位数：</p>
+            <p>①科目名：{{$subject}}</p>
+            <p>②分類　：{{$category}}</p>
+            <p>③単位数：{{ $credit}}単位</p>
                 <div class="confirm-text my-5">
                     <p>以上の内容で登録します。<br>よろしいですか？</p>
                 </div>
             </div>
+            <form method="POST" action="{{ url('/course/registration/confirm') }}">
+                @csrf
+            <input type="hidden" name='subject' value="{{$subject}}">
+            <input type="hidden" name='category' value="{{$category}}">
+            <input type="hidden" name='credit' value="{{$credit}}">
             <div class="mt-5 confirm-button">
                 <div class="row text-center">
                     <div class="col-2 standard-button">
@@ -29,10 +34,11 @@
                     </div>
                         <div class="col-8"></div>
                     <div class="col-2 standard-button">
-                    <a href="{{url('/list')}}">登録</a>
+                    <button type="submit">登録</a>
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </body>

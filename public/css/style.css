@@ -268,6 +268,14 @@ button {
     width: 30%;
     height: 2rem;
 }
+.regist-submit{
+    background-color: #c9eacd;
+    padding: 2%;
+    border: none;
+}
+.regist-submit:focus{
+    outline: none;
+}
 /* 履修登録確認画面 */
 /* confirm.blade.php */
 .confirm {
@@ -330,10 +338,52 @@ button {
 .graduation-change {
     background-color: #c9eacd;
 }
-#subject {
-    padding: 3% 5%;
+#edit-graduation {
+    background-color: #c9eacd;
+    padding: 2% 4%;
 }
-
+#confirm-graduation{
+    background-color: #ffcccc;
+    padding: 2% 5%;
+    margin-right: 10px;
+}
+#cancel-graduation{
+    background-color: #cfe0ff;
+    padding: 2% 3%;
+    margin-left: 10px;
+}
+#subject {
+    padding: 2% 5%;
+}
+.edit-input {
+    width: 15%;
+}
+#edit-specialized,
+#edit-base,
+#edit-libral,
+#edit-necessary {
+    display: none;
+}
+#display-specialized,
+#display-base,
+#display-libral,
+#display-necessary {
+    display: block;
+}
+#cancel-specialized,
+#cancel-base,
+#cancel-libral,
+#cancel-necessary {
+    display: none;
+    background-color: #cfe0ff;
+    font-size: 11px;
+}
+#edit-button {
+    display: block;
+}
+#confirm-button {
+    display: none;
+}
 /* パスワード変更 */
 /* password_change.blade.php */
 .password-change input {

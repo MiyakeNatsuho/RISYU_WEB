@@ -29,10 +29,10 @@
                     卒業認定単位確認/変更
                     <a href="{{('/graduation/credit')}}"></a>
                 </div>
-                <div class="home-button text-center">
+                {{-- <div class="home-button text-center">
                     パスワード変更
                     <a href="{{('/password')}}"></a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
